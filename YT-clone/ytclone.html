@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="assets/logo1.png">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="ytclone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="left">
+            <i class="fa-solid fa-bars"></i>
+            <div class="logo">
+                <div class="logo-img">
+                    <img src="assets/logo1.png" alt="ytlogo">
+                </div>
+                <h1 id="logo-txt">YouTube <sup id="country">IN</sup></h1>
+            </div>
+        </div>
+        <div class="center">
+            <form action="#">
+                <input type="text" name="search" id="search">
+            </form>
+            <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="mic"><i class="fa-solid fa-microphone"></i></button>
+        </div>
+        <div class="right">
+            <i class="fa-solid fa-video"></i>
+            <i class="fa-regular fa-bell"></i>
+            <div class="profile">
+                <img src="assets/user.png" alt="user">
+            </div>
+        </div>
+    </div>
+    <div class="main-body">
+        <div class="sidebar">
+            <div class="sidebar-items">
+                <a href="#" class="sidebar-item"><i class="fa-solid fa-house"></i>Home</a>
+                <a href="#" class="sidebar-item"><i class="fa-solid fa-bolt"></i>Shorts</a>
+                <a href="#" class="sidebar-item"><i class="fa-brands fa-youtube"></i>Subscriptions</a>
+                <hr>
+                <a href="#" class="sidebar-item"><i class="fa-regular fa-clone"></i>Library</a>
+                <a href="#" class="sidebar-item"><i class="fa-solid fa-clock-rotate-left"></i>History</a>
+                <a href="#" class="sidebar-item"><i class="fa-regular fa-square"></i>Your Videos</a>
+                <a href="#" class="sidebar-item"><i class="fa-regular fa-clock"></i>Watch Later</a>
+                <a href="#" class="sidebar-item"><i class="fa-regular fa-thumbs-up"></i>Liked Videos</a>
+                <hr>
+                <a href="#" class="sidebar-item"><img class="channel-logo" src="assets/apnaclg-ch.jpg" alt="">Apna College</a>
+                <a href="#" class="sidebar-item"><img class="channel-logo" src="assets/mrbeast-ch.jpg" alt="">Mr.Beast</a>
+                <a href="#" class="sidebar-item"><img class="channel-logo" src="assets/ama-ch.jpg" alt="">Aman Dhattarwal</a>
+                <a href="#" class="sidebar-item"><img class="channel-logo" src="assets/ted-ch.jpg" alt="">TED-Ed</a>
+                <a href="#" class="sidebar-item"><img class="channel-logo" src="assets/angryprash-ch.jpg" alt="">Angry Prash</a>
+                <a href="#" class="sidebar-item" style="margin-left: 2px;"><i class="fa-solid fa-chevron-down" style="padding-left: 2px;font-size: 1.2rem;"></i>Browse channels</a>
+                <hr>
+                <h3>Explore</h3>
+                <a href="#" class="sidebar-item"><i class="fa-solid fa-arrow-trend-up"></i>Trending</a>
+                <a href="#" class="sidebar-item"><i class="fa-solid fa-music"></i>Music</a>
+                <a href="#" class="sidebar-item"><i class="fa-solid fa-cart-shopping"></i>Shopping</a>
+                <a href="#" class="sidebar-item"><i class="fa-solid fa-satellite-dish"></i>Live</a>
+                <a href="#" class="sidebar-item"><i class="fa-solid fa-gamepad"></i>Gaming</a>
+                <a href="#" class="sidebar-item"><i class="fa-regular fa-newspaper"></i>News</a>
+                <a href="#" class="sidebar-item"><i class="fa-solid fa-medal"></i>Sports</a>
+                <a href="#" class="sidebar-item"><i class="fa-solid fa-graduation-cap"></i>Learning</a>
+                <a href="#" class="sidebar-item"><i class="fa-solid fa-shirt"></i>Fashion</a>
+                <hr>
+                <h3>More from YouTube</h3>
+                <a href="#" class="sidebar-item"><img class="morefromyt" src="assets/logo1.png" alt="">YouTube Premium</a>
+                <a href="#" class="sidebar-item"><img class="morefromyt" src="assets/logo1.png" alt="">YouTube Studio</a>
+                <a href="#" class="sidebar-item"><img class="morefromyt" src="assets/logo1.png" alt="">YouTube Music</a>
+                <a href="#" class="sidebar-item"><img class="morefromyt" src="assets/logo1.png" alt="">YouTube Kids</a>
+                <hr>
+                <a href="#" class="sidebar-item"><i class="fa-solid fa-gear"></i>Settings</a>
+                <a href="#" class="sidebar-item"><i class="fa-regular fa-flag"></i>Report history</a>
+                <a href="#" class="sidebar-item"><i class="fa-solid fa-question"></i>Help</a>
+                <a href="#" class="sidebar-item"><i class="fa-regular fa-message"></i>Send feedback</a>
+                <hr>
+                <div class="sidebar-footer">
+                    <p>About Press Copyright</p>
+                    <p>Contact us Creator Advertise</p>
+                    <p>Developers</p>
+                    <br>
+                    <p>Terms Privacy Policy & Safety</p>
+                    <p>How YouTube works</p>
+                    <p>Test new features</p>
+                    <br>
+                    <p id="copy">&copy; 2023 Google LLC</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="filter-bar">
+                <div class="filter">
+                    <p>All</p>
+                </div>
+                <div class="filter">
+                    <p>Anime</p>
+                </div>
+                <div class="filter">
+                    <p>Live</p>
+                </div>
+                <div class="filter">
+                    <p>Movies</p>
+                </div>
+                <div class="filter">
+                    <p>Mobiles</p>
+                </div>
+                <div class="filter">
+                    <p>Mixes</p>
+                </div>
+                <div class="filter">
+                    <p>Wealth</p>
+                </div>
+                <div class="filter">
+                    <p>Games</p>
+                </div>
+                <div class="filter">
+                    <p>Motivation</p>
+                </div>
+                <div class="filter">
+                    <p>Web</p>
+                </div>
+                <div class="filter">
+                    <p>International</p>
+                </div>
+                <div class="filter">
+                    <p>Bags</p>
+                </div>
+                <div class="filter">
+                    <p>Lifestyle</p>
+                </div>
+                <div class="filter">
+                    <p>Laptops</p>
+                </div>
+                <div class="filter">
+                    <p>Coding</p>
+                </div>
+                <div class="filter">
+                    <p>Books</p>
+                </div>
+                <div class="filter">
+                    <p>Household</p>
+                </div>
+                <div class="filter">
+                    <p>Public</p>
+                </div>
+                <div class="filter">
+                    <p>Programming</p>
+                </div>
+                <div class="filter">
+                    <p>Language</p>
+                </div>
+                <div class="filter">
+                    <p>Universe</p>
+                </div>
+                <div class="filter">
+                    <p>Space</p>
+                </div>
+                <div class="filter">
+                    <p>New to you</p>
+                </div>
+            </div>
+            <div class="videos">
+                <div class="video-cover">
+                    <div class="video-content">
+                        <a href="#" class="video-box">
+                            <img src="assets/img7.jpeg" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="assets/img1-ch.jpeg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">Mission Raniganj:The Great Bharat Rescue|Official Trailer|Akshay...</h3>
+                                <div class="channel-name">T-Series</div>
+                                <div class="views-upload">
+                                    <div class="views">4.9 crore views</div>
+                                    <div class="upload">&#x2022; 3 days ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-cover">
+                    <div class="video-content">
+                        <a href="#" class="video-box">
+                            <img src="assets/img2.jpeg" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="assets/img1-ch.jpeg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">Jawan:Chaleya(Lyrical Video)|Shah Rukh Khan|Nayanthara|Atee|</h3>
+                                <div class="channel-name">T-Series</div>
+                                <div class="views-upload">
+                                    <div class="views">60 lakh views</div>
+                                    <div class="upload">&#x2022; 2 weeks ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-cover">
+                    <div class="video-content">
+                        <a href="#" class="video-box">
+                            <img src="assets/img3.jpeg" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="assets/img3-ch.jpeg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">Oggy and the Cockroaches</h3>
+                                <div class="channel-name">Oggy Hindi</div>
+                                <div class="views-upload">
+                                    <div class="views">19 crore views</div>
+                                    <div class="upload">&#x2022; 4 years ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-cover">
+                    <div class="video-content">
+                        <a href="#" class="video-box">
+                            <img src="assets/img4.jpeg" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="assets/img4-ch.jpeg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">Heeriye(Official Video)Jasleen Royal ft Arjit Singh|Dulquer Salmaan</h3>
+                                <div class="channel-name">Soothing Sparrow</div>
+                                <div class="views-upload">
+                                    <div class="views">47 lakh views</div>
+                                    <div class="upload">&#x2022; 3 weeks ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-cover">
+                    <div class="video-content">
+                        <a href="#" class="video-box">
+                            <img src="assets/img5.jpeg" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="assets/img5-ch.jpeg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">Main gaya Raja Ravan ki Sone ki Lanka!*Vlog*</h3>
+                                <div class="channel-name">Shlok Srivastava</div>
+                                <div class="views-upload">
+                                    <div class="views">23 lakh views</div>
+                                    <div class="upload">&#x2022; 8 days ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-cover">
+                    <div class="video-content">
+                        <a href="#" class="video-box">
+                            <img src="assets/img6.jpeg" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="assets/img6-ch.jpeg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">NEW! Taarak Mehta Ka Ooltah Chashmah|Ep 330|</h3>
+                                <div class="channel-name">Sony SAB</div>
+                                <div class="views-upload">
+                                    <div class="views">15 lakh views</div>
+                                    <div class="upload">&#x2022; 10 months ago</div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="video-cover">
+                    <div class="video-content">
+                        <a href="#" class="video-box">
+                            <img src="assets/img17.jpeg" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="assets/img17-ch.jpeg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">India's Worst Plane Crash|Only Mid-Air Collision in Histroy|Dhruv Rathee</h3>
+                                <div class="channel-name">Dhruv Rathee</div>
+                                <div class="views-upload">
+                                    <div class="views">78 lakh views</div>
+                                    <div class="upload">&#x2022; 1 year ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-cover">
+                    <div class="video-content">
+                        <a href="#" class="video-box">
+                            <img src="assets/img8.jpeg" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="assets/img8-ch.jpeg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">Exams Ka Mausam|Ashish Chanchlani</h3>
+                                <div class="channel-name">ashish chanchlani vines</div>
+                                <div class="views-upload">
+                                    <div class="views">12 crore views</div>
+                                    <div class="upload">&#x2022; 5 years ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-cover">
+                    <div class="video-content">
+                        <a href="#" class="video-box">
+                            <img src="assets/img9.jpeg" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="assets/img9-ch.jpeg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">SQL-Complete Course in 3 Hours|SQL One Shot using MySQL</h3>
+                                <div class="channel-name">Apna College</div>
+                                <div class="views-upload">
+                                    <div class="views">14 lakh views</div>
+                                    <div class="upload">&#x2022; 1 month ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-cover">
+                    <div class="video-content">
+                        <a href="#" class="video-box">
+                            <img src="assets/img14.jpeg" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="assets/img14-ch.jpeg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">MY SOLDIERS RAGE-Attack on Titan Motivational Video[AMV]</h3>
+                                <div class="channel-name">CROSBY</div>
+                                <div class="views-upload">
+                                    <div class="views">2.5 lakh views</div>
+                                    <div class="upload">&#x2022; 9 months ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-cover">
+                    <div class="video-content">
+                        <a href="#" class="video-box">
+                            <img src="assets/img11.jpeg" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="assets/img11-ch.jpeg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">Mind Ko SAhi Disha Dena Seekho-By Sandeep Maheshwari|Hindi</h3>
+                                <div class="channel-name">Sandeep Maheshwari</div>
+                                <div class="views-upload">
+                                    <div class="views">9.5 lakh views</div>
+                                    <div class="upload">&#x2022; 7 days ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-cover">
+                    <div class="video-content">
+                        <a href="#" class="video-box">
+                            <img src="assets/img12.jpeg" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="assets/img12-ch.jpeg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">Bella Ciao-La Casa de Papel</h3>
+                                <div class="channel-name">Bella Ciao</div>
+                                <div class="views-upload">
+                                    <div class="views">11 crore views</div>
+                                    <div class="upload">&#x2022; 4 years ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-cover">
+                    <div class="video-content">
+                        <a href="#" class="video-box">
+                            <img src="assets/img13.jpeg" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="assets/img13-ch.jpeg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">GSoC 2024 Roadmap|Google Summer of Code|Complete Guide</h3>
+                                <div class="channel-name">Apna College</div>
+                                <div class="views-upload">
+                                    <div class="views">85K views</div>
+                                    <div class="upload">&#x2022; 23 hours ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-cover">
+                    <div class="video-content">
+                        <a href="#" class="video-box">
+                            <img src="assets/img10.jpeg" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="assets/img10-ch.jpeg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">India Canada Row:Jaishankar Hits Back At Canada's Claim Of India</h3>
+                                <div class="channel-name">Firstpost</div>
+                                <div class="views-upload">
+                                    <div class="views">2.5 lakh views</div>
+                                    <div class="upload">&#x2022; 1 day ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-cover">
+                    <div class="video-content">
+                        <a href="#" class="video-box">
+                            <img src="assets/img15.jpeg" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="assets/img15-ch.jpeg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">How INDIGO AIRLINES became a MONOPOLY in Indian Aviation....</h3>
+                                <div class="channel-name">Think School</div>
+                                <div class="views-upload">
+                                    <div class="views">10 lakh views</div>
+                                    <div class="upload">&#x2022; 1 year ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-cover">
+                    <div class="video-content">
+                        <a href="#" class="video-box">
+                            <img src="assets/img16.jpeg" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="assets/img16-ch.jpeg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">Guardians of the Galaxy Vol3-What Was The Point</h3>
+                                <div class="channel-name">How It SHould Have Ended</div>
+                                <div class="views-upload">
+                                    <div class="views">1.8 lakh views</div>
+                                    <div class="upload">&#x2022; 4 months ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

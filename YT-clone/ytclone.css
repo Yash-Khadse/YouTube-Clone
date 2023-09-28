@@ -1,0 +1,407 @@
+/* OVERALL CSS */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* CSS FOR H,I,P,A,HR */
+
+h1 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 100;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+h4 {
+    font-size: .9rem;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-left: 20px;
+}
+
+i {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+p,a {
+    font-size: 0.9rem;
+}
+
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 12px 0;
+}
+
+/* SCROLLBAR CSS */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 5px;
+}
+
+.sidebar:hover::-webkit-scrollbar-thumb {
+    background: #717171;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background: #888;
+}
+
+/* HEADER */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 1.5rem;
+    padding-right: 2.5rem;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left i {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.left i:hover {
+    opacity: 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+}
+
+.logo-img {
+    position: relative;
+    height: 3.125rem;
+    width: 1.875rem;
+    cursor: pointer;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+#logo-txt {
+    letter-spacing: -0.0431rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#country {
+    letter-spacing: normal;
+    font-size: 0.6rem;
+    font-weight: 100;
+    opacity: 0.8;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    flex: 0 1 42rem;
+    margin-left: 2.5rem;
+    height: 2.5rem;
+}
+.center form {
+    position: relative;
+    width: 32.1831rem;
+}
+
+.center input {
+    height: 1.625rem;
+    display: flex;
+    align-items: center;
+    width: 32.1831rem;
+    background-color: #121212;
+    border: 1px solid rgba(255, 255, 255, 0.247);
+    border-radius: 1rem 0rem 0rem 1rem;
+    padding: 12px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.search {
+    min-width: 3.75rem;
+    height: 1.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    background-color: #383838;
+    outline: none;
+    border: none;
+    border-radius: 0rem 1rem 1rem 0rem;
+    cursor: pointer;
+}
+
+.mic {
+    height: 1.8rem;
+    min-width: 2rem;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background-color: #383838;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.right i {
+    margin-left: 1.5625rem;
+    cursor: pointer;
+}
+
+.profile {
+    position: relative;
+    height: 1.875rem;
+    width: 1.875rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 1.5625rem;
+    cursor: pointer;
+}
+
+/* MAIN BODY */
+
+.main-body {
+    display: flex;
+    position: fixed;
+    height: calc(100vh - 60px);
+    top: 60px;
+}
+
+/* SIDE-BAR */
+
+.sidebar {
+    background-color: #181818;
+    padding-top: 0.625rem;
+    width: 15rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: white;
+}
+
+.sidebar a {
+    font-size: 0.9rem;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-items i {
+    opacity: 0.8;
+}
+
+.sidebar-items i:hover {
+    opacity: 1;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    cursor: pointer;
+    height: 2.5rem;
+}
+
+.sidebar-item:hover {
+    background-color: #4c4c4c;
+    border-radius: 0.625rem;
+}
+
+.channel-logo {
+    position: relative;
+    height: 1.5625rem;
+    width: 1.5625rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1.5rem;
+}
+
+.morefromyt {
+    position: relative;
+    height: 1.5625rem;
+    width: 1.5625rem;
+    border-radius: 10%;
+    overflow: hidden;
+    margin-right: 1..5rem;
+}
+
+.sidebar-footer p{
+    margin-left: 1rem;
+    word-spacing: 4px;
+    font-size: 0.8rem;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#copy {
+    word-spacing: normal;
+    opacity: 0.3;
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
+.sidebar-item i {
+    margin-right: 24px;
+}
+
+.main-content {
+    width: calc(100vw - 240px);
+}
+
+/* FILTER-BAR */
+
+.filter-bar {
+    overflow-x: scroll;
+    background-color: #181818;
+    display: flex;
+    padding-left: 0.875rem;
+}
+
+.filter-bar::-webkit-scrollbar{
+    height: 0;
+}
+
+.filter {
+    margin: 12px 6px;
+    background-color: #383838;
+    padding: 6px 12px;
+    border-radius: 0.625rem;
+    white-space: nowrap;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+}
+
+.filter:hover {
+    background-color: #555555;
+}
+
+/* VIDEO-SECTION */
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 18px;
+    padding: 20px 25px;
+    background-color: #181818;
+    overflow-y: scroll;
+    height: calc(100vh - 115px);
+}
+
+.video-cover {
+    position: relative;
+    transition: 0.5s;
+    transition-delay: 0.05s;
+}
+
+.video-content {
+    margin-bottom: 1.5625rem;
+    position: relative;
+    transition: 0.5s;
+    width: 100%;
+    border-radius: 0.3125rem;
+}
+
+.video-content:hover {
+    transform: scale(1.09);
+    z-index: 5;
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.video-box {
+    position: relative;
+    width: auto;
+    height: 11rem;
+    display: block;
+}
+
+.video-box img {
+    border-radius: 1rem;
+}
+
+.channel-logo {
+    position: relative;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.video-details {
+    display: flex;
+    color: #fff;
+}
+
+.title {
+    margin-left: -1.25rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.detail {
+    margin-left: -0.5625rem;
+}
+
+.channel-name {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.views-upload {
+    display: flex;
+    font-size: 0.83rem;
+    color: #aaa;
+}
+
+.upload {
+    margin-left: 5px;
+}
+
